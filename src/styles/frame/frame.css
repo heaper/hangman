@@ -1,0 +1,12 @@
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	line-height: 1.375;
+	background-image: radial-gradient(ellipse at center, var(--color-whiskey), var(--color-whiskey) 50%, var(--color-whiskey-dark) 60%);
+	color: var(--color-text);
+	padding: 0;
+	margin: 0;
+	font-family: var(--font-family-primary);
+}

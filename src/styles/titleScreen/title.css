@@ -1,0 +1,86 @@
+.title {
+    --title-anim-delay: 2s;
+	--title-letter-anim-delay: 4s;
+	--title-letter-anim-duration: .75s;
+
+	text-transform: uppercase;
+    text-align: center;
+	color: var(--color-white);
+	margin: 0 0 1em 0;
+	text-shadow: 0 0 .125em rgba(58,6,0, 25%);
+	font-size: 2em;
+}
+
+.title--with-intro {
+    animation: 2.5s ease-in var(--title-anim-delay) 1 normal both fade-in;
+}
+
+.title--with-intro .title__letter {
+    opacity: 0;
+    animation-name: letter-pop-in;
+}
+
+.title__letter-wrap {
+	display: inline-block;
+	width: 1em;
+	border-bottom: .125em solid var(--color-brown);
+}
+
+.title__letter-wrap + .title__letter-wrap {
+    margin-left: .25em;
+}
+
+.title__letter {
+	display: block;
+	animation-duration: var(--title-letter-anim-duration);
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+}
+
+.title__letter--m {
+	animation-delay: var(--title-letter-anim-delay);
+}
+
+.title__letter--h {
+	animation-delay: calc(var(--title-letter-anim-delay) + var(--title-letter-anim-duration));
+}
+
+.title__letter--a {
+	animation-delay: calc(var(--title-letter-anim-delay) + (var(--title-letter-anim-duration) * 2));
+}
+
+.title__letter--g {
+	animation-delay: calc(var(--title-letter-anim-delay) + (var(--title-letter-anim-duration) * 3));
+}
+
+.title__letter--n {
+	animation-delay: calc(var(--title-letter-anim-delay) + (var(--title-letter-anim-duration) * 4));
+}
+
+@media (min-width: 25em) {
+	.title {
+		font-size: 2.5em;
+	}
+}
+
+@media (min-width: 30em) {
+	.title {
+		font-size: 3em;
+	}
+}
+
+@keyframes letter-pop-in {
+	0% {
+		transform: scale(.9);
+	}
+
+	50% {
+		opacity: .5;
+		transform: scale(1.2);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

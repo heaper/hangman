@@ -1,0 +1,113 @@
+@keyframes letter-intro {
+	0% {
+		transform: scale(1);
+		opacity: 0;
+	}
+
+	50% {
+		transform: scale(1.25);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes letter-guessed {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.25);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.phrase {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+	text-transform: uppercase;
+}
+
+.phrase--small {
+	font-size: .625em;
+}
+
+.phrase--medium {
+	font-size: .8125em;
+}
+
+.phrase--large {
+	font-size: 1em;
+}
+
+.phrase--with-intro .letter {
+    animation: .25s ease-in-out 0s 1 normal both letter-intro;
+    opacity: 0;
+}
+
+.word {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 .5em;
+}
+
+.letter {
+	width: 1em;
+    height: 1.25em;
+	line-height: 1.25;
+	margin: 0 .1875em .5em 0;
+	text-align: center;
+	background-color: var(--color-white);
+	border: thin solid var(--color-brown-light);
+	border-bottom: .0625em solid var(--color-brown);
+	border-radius: .0625em .0625em 0 0;
+	transform-origin: bottom;
+}
+
+.letter--guessed {
+	background-color: var(--color-white);
+	opacity: 1;
+	animation: .25s ease-in-out 0s 1 normal both letter-guessed;
+}
+
+.letter:last-child {
+	margin-right: 0;
+}
+
+@media (min-width: 25em) {
+	.phrase--small {
+		font-size: .875em;
+	}
+
+	.phrase--medium {
+		font-size: 1.125em;
+	}
+
+	.phrase--large {
+		font-size: 1.375em;
+	}
+}
+
+@media (min-width: 40em) {
+
+	.phrase--small {
+		font-size: 1em;
+	}
+
+	.phrase--medium {
+		font-size: 1.375em;
+	}
+
+	.phrase--large {
+		font-size: 1.75em;
+	}
+}
+

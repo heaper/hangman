@@ -1,0 +1,33 @@
+{
+  "name": "hangman",
+  "version": "0.0.1",
+  "description": "A multiplayer hangman web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heaper/hangman.git"
+  },
+  "keywords": [
+    "hangman"
+  ],
+  "author": "Ryan Heap <heaper@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heaper/hangman/issues"
+  },
+  "homepage": "https://github.com/heaper/hangman#readme",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@storybook/react": "^5.1.11",
+    "babel-loader": "^8.0.6"
+  }
+}

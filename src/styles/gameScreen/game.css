@@ -1,0 +1,36 @@
+.game {
+	display: grid;
+	grid-template-columns: 30% 65%;
+	grid-template-rows: auto auto;
+	grid-column-gap: 5%;
+	align-items: center;
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+.diagram {
+	width: 100%;
+}
+
+.phrase, .keyboard {
+	width: 100%;
+}
+
+@media (max-width: 39.99em) {
+	.keyboard {
+		grid-column: 1 / span 2;
+	}
+}
+
+@media (min-width: 40em) {
+	.game {
+		grid-template-columns: 30% 68%;
+		grid-template-rows: auto auto;
+		grid-column-gap: 2%;
+		align-items: start;
+	}
+
+	.diagram {
+		grid-row: 1 / span 2;
+	}
+}

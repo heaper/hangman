@@ -1,0 +1,16 @@
+.title-screen {
+    --title-button-fade-delay: 8s;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title-screen__button--with-intro {
+	animation: 2.5s ease-in var(--title-button-fade-delay) 1 normal both fade-in;
+}
+
+.title-screen__button.cajole {
+    animation: 5s linear 0s infinite alternate both shake;
+}

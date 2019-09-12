@@ -1,0 +1,40 @@
+.site-header {
+	padding: .5em 1em;
+	background-color: var(--color-brown);
+	color: var(--color-white);
+	text-align: center;
+	box-shadow: 0 .125em .25em .125em rgba(0, 0, 0, .15);
+}
+
+.site-header__inner-wrap {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.site-header--with-back-link {
+	padding-right: 2.5em;
+}
+
+.logo {
+	font-size: 1.25em;
+	text-decoration: none;
+	text-transform: uppercase;
+	flex-grow: 1;
+	order: 1;
+	line-height: 1.2;
+}
+
+.back-link {
+	color: var(--color-white);
+	width: 1em;
+	height: 1em;
+	font-size: 1.5em;
+	display: block;
+	order: 0;
+}
+
+.back-link .icon {
+	display: block;
+}

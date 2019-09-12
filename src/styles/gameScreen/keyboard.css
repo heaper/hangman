@@ -1,0 +1,22 @@
+.keyboard {
+	max-width: 21em;
+	margin: 1em auto 0;
+	text-align: center;
+}
+
+.keyboard__button {
+	margin: .125em;
+	padding: .5em 0;
+	width: 1.8125em;
+	text-transform: uppercase;
+}
+
+@media (min-width: 30em) {
+	.keyboard {
+		font-size: 1.25em;
+	}
+
+	.keyboard__button {
+		width: 2em;
+	}
+}

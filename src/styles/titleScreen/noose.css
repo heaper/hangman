@@ -1,0 +1,60 @@
+.noose {
+    --noose-sway-animation: 15s ease-in-out 0s 1 normal both noose-sway;
+
+	transform-origin: top;
+	height: 12em;
+	width: 2em;
+	margin-left: -1em;
+	position: absolute;
+	left: 50%;
+	top: calc(28vh - 12em);
+	fill: var(--color-brown);
+	animation: var(--noose-sway-animation);
+}
+
+.noose--with-intro {
+    animation: var(--noose-sway-animation),
+		2.5s ease-in 0s 1 normal both fade-in;
+}
+
+@media (min-height: 40em) {
+	.noose {
+		height: 15em;
+		width: 2.125em;
+		top: calc(28vh - 15em);
+	}
+}
+
+@keyframes noose-sway {
+	0% {
+		transform: rotate(7deg);
+	}
+
+	14% {
+		transform: rotate(-6deg);
+	}
+
+	28% {
+		transform: rotate(5deg);
+	}
+
+	42% {
+		transform: rotate(-4deg);
+	}
+
+	56% {
+		transform: rotate(3deg);
+	}
+
+	70% {
+		transform: rotate(-2deg);
+	}
+
+	84% {
+		transform: rotate(1deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}

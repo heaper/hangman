@@ -1,0 +1,89 @@
+.diagram {
+	stroke: var(--color-black);
+	stroke-width: .25em;
+	background-color: var(--color-white);
+	box-shadow: 0 0 0.25em 0.125em rgba(0,0,0,.25);
+	transform: rotate(-3deg);
+    max-width: 20em;
+}
+
+.diagram--with-intro .gallows-part {
+    animation-name: dash;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.diagram--with-intro .gallows-base {
+	stroke-dasharray: 80;
+  	stroke-dashoffset: 80;
+}
+
+.diagram--with-intro .gallows-pole {
+	animation-delay: .5s;
+	stroke-dasharray: 230;
+  	stroke-dashoffset: 230;
+}
+
+.diagram--with-intro .gallows-support {
+	animation-delay: 1s;
+	stroke-dasharray: 30;
+  	stroke-dashoffset: 30;
+}
+
+.diagram--with-intro .gallows-arm {
+	animation-delay: 1.5s;
+	stroke-dasharray: 80;
+  	stroke-dashoffset: 80;
+}
+
+.diagram--with-intro .gallows-rope {
+	animation-delay: 2s;
+	stroke-dasharray: 40;
+  	stroke-dashoffset: 40;
+}
+
+.body-eye, .body-mouth {
+	stroke-width: .125em;
+}
+
+.body-part {
+	opacity: 0;
+}
+
+.body-part.is-visible {
+	animation-name: dash;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	opacity: 1;
+}
+
+.body-head {
+	stroke-dasharray: 130;
+  	stroke-dashoffset: 130;
+}
+
+.body-torso, .body-leg {
+	stroke-dasharray: 50;
+  	stroke-dashoffset: 50;
+}
+
+.body-arm {
+	stroke-dasharray: 40;
+	stroke-dashoffset: 40;
+}
+
+.body-eye {
+	stroke-dasharray: 10;
+	stroke-dashoffset: 10;
+}
+
+.body-mouth {
+	stroke-dasharray: 65;
+	stroke-dashoffset: 65;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

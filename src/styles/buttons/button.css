@@ -1,0 +1,69 @@
+.button {
+    display: inline-block;
+	padding: .625em 1em;
+	text-decoration: none;
+    border: 0;
+	border-radius: .125em;
+	font-size: 1em;
+	font-family: var(--font-family-primary);
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: transform .25s ease-in;
+}
+
+.button, .button:visited {
+	background-color: var(--color-brown);
+	color: var(--color-white);
+}
+
+.button:hover, .button:focus {
+	background-color: var(--color-brown-light);
+	box-shadow: 0 0 1.5em 0 var(--color-brown) inset;
+	animation: none;
+}
+
+.button:active {
+	transform: scale(1.1);
+}
+
+.button:disabled {
+	opacity: .35;
+	cursor: not-allowed;
+}
+
+.button:disabled:hover, .button:disabled:focus, .button:disabled:active {
+    background-color: var(--color-brown);
+	color: var(--color-white);
+    transform: none;
+}
+
+.cajole {
+	animation: 5s linear 0s infinite alternate both shake;
+}
+
+@keyframes shake {
+	35% {
+		transform: rotate(0);
+	}
+	37.5% {
+		transform: rotate(2deg);
+	}
+	42.5% {
+		transform: rotate(-2deg);
+	}
+	47.5% {
+		transform: rotate(2deg);
+	}
+	52.5% {
+		transform: rotate(-2deg);
+	}
+	57.5% {
+		transform: rotate(2deg);
+	}
+	62.5% {
+		transform: rotate(-2deg);
+	}
+	65% {
+		transform: rotate(0);
+	}
+}

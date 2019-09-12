@@ -1,0 +1,9 @@
+.icon {
+    display: inline-block;
+    fill: currentcolor;
+    height: 1em;
+    stroke: currentcolor;
+    stroke-width: 0;
+    vertical-align: middle;
+    width: 1em;
+}
