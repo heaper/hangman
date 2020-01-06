@@ -32,8 +32,8 @@
 
 .diagram--with-intro .gallows-arm {
 	animation-delay: 1.5s;
-	stroke-dasharray: 80;
-  	stroke-dashoffset: 80;
+	stroke-dasharray: 84;
+  	stroke-dashoffset: 84;
 }
 
 .diagram--with-intro .gallows-rope {

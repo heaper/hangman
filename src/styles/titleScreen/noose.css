@@ -1,27 +1,35 @@
 .noose {
-    --noose-sway-animation: 15s ease-in-out 0s 1 normal both noose-sway;
-
 	transform-origin: top;
-	height: 12em;
-	width: 2em;
-	margin-left: -1em;
+	height: 60vh;
 	position: absolute;
 	left: 50%;
-	top: calc(28vh - 12em);
-	fill: var(--color-brown);
-	animation: var(--noose-sway-animation);
+	top: 0;
+	filter: blur(1px);
+	opacity: .6;
+	z-index: -1;
 }
 
 .noose--with-intro {
-    animation: var(--noose-sway-animation),
-		2.5s ease-in 0s 1 normal both fade-in;
+    animation: .5s ease-in 0s 1 normal both fade-in,
+		1s ease-in-out 3s 1 normal both noose-fade-out,
+		15s ease-in-out 0s 1 normal both noose-sway;
 }
 
-@media (min-height: 40em) {
-	.noose {
-		height: 15em;
-		width: 2.125em;
-		top: calc(28vh - 15em);
+.noose__svg {
+	height: 100%;
+	transform: translate(-50%, -1%);
+	fill: var(--color-brown);
+}
+
+@keyframes noose-fade-out {
+	0% {
+		opacity: 1;
+		filter: none;
+	}
+
+	100% {
+		opacity: .5;
+		filter: blur(1px);
 	}
 }
 

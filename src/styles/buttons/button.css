@@ -8,7 +8,8 @@
 	font-family: var(--font-family-primary);
 	text-transform: uppercase;
 	cursor: pointer;
-	transition: transform .25s ease-in;
+	transition: background-color .25s ease-in,
+		color .25s ease-in;
 }
 
 .button, .button:visited {
@@ -18,12 +19,10 @@
 
 .button:hover, .button:focus {
 	background-color: var(--color-brown-light);
-	box-shadow: 0 0 1.5em 0 var(--color-brown) inset;
-	animation: none;
 }
 
-.button:active {
-	transform: scale(1.1);
+.button:active, .button--active {
+	background-color: var(--color-brown-dark);
 }
 
 .button:disabled {
@@ -31,14 +30,47 @@
 	cursor: not-allowed;
 }
 
-.button:disabled:hover, .button:disabled:focus, .button:disabled:active {
+.button:disabled:hover, 
+.button:disabled:focus, 
+.button:disabled:active {
     background-color: var(--color-brown);
 	color: var(--color-white);
     transform: none;
 }
 
+.button--alt {
+    border: .125em solid var(--color-brown);
+    padding: .5em .875em;
+}
+
+.button--alt, 
+.button--alt:visited {
+	background-color: var(--color-white);
+	color: var(--color-brown);
+}
+
+.button--alt:hover, 
+.button--alt:focus,
+.button--alt:active {
+	color: var(--color-white);
+}
+
+.button--alt:hover, 
+.button--alt:focus {
+	background-color: var(--color-brown);
+}
+
+.button--alt:active {
+	background-color: var(--color-brown-dark);
+}
+
 .cajole {
 	animation: 5s linear 0s infinite alternate both shake;
+}
+
+.cajole:hover,
+.cajole:focus {
+	animation: none;
 }
 
 @keyframes shake {

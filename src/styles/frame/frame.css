@@ -1,12 +1,29 @@
+* {
+	box-sizing: border-box;
+}
+
 html, body {
 	min-height: 100vh;
 }
 
 body {
 	line-height: 1.375;
-	background-image: radial-gradient(ellipse at center, var(--color-whiskey), var(--color-whiskey) 50%, var(--color-whiskey-dark) 60%);
+	background-image: radial-gradient(
+		circle at center, 
+		var(--color-whiskey), 
+		var(--color-whiskey) 65%, 
+		var(--color-whiskey-dark) 75%
+	);
 	color: var(--color-text);
 	padding: 0;
 	margin: 0;
 	font-family: var(--font-family-primary);
+}
+
+.main {
+	min-height: calc(100vh - 4.5rem);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding : 1em;
 }

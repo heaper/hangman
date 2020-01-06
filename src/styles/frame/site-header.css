@@ -13,7 +13,7 @@
 	justify-content: space-between;
 }
 
-.site-header--with-back-link {
+.site-header--with-back-button {
 	padding-right: 2.5em;
 }
 
@@ -26,15 +26,18 @@
 	line-height: 1.2;
 }
 
-.back-link {
+.back-button {
 	color: var(--color-white);
 	width: 1em;
 	height: 1em;
 	font-size: 1.5em;
 	display: block;
 	order: 0;
+	background-color: transparent;
+    border: 0;
+    padding: 0;
 }
 
-.back-link .icon {
+.back-button .icon {
 	display: block;
 }

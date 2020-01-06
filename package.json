@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "build": "node tasks/build",
+    "serve": "node tasks/serve"
   },
   "repository": {
     "type": "git",
@@ -23,11 +25,23 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
-    "@storybook/react": "^5.1.11",
-    "babel-loader": "^8.0.6"
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@storybook/react": "^5.2.1",
+    "babel-loader": "^8.0.6",
+    "express": "^4.17.1",
+    "fs-extra": "^8.1.0",
+    "postcss": "^7.0.18",
+    "postcss-easy-import": "^3.0.0",
+    "rollup": "^1.21.3",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "storybook-react-router": "^1.0.7"
   }
 }

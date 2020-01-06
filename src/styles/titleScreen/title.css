@@ -1,18 +1,17 @@
 .title {
-    --title-anim-delay: 2s;
-	--title-letter-anim-delay: 4s;
+	--title-letter-anim-delay: 1s;
 	--title-letter-anim-duration: .75s;
 
 	text-transform: uppercase;
     text-align: center;
 	color: var(--color-white);
-	margin: 0 0 1em 0;
+	margin: 0;
 	text-shadow: 0 0 .125em rgba(58,6,0, 25%);
 	font-size: 2em;
 }
 
 .title--with-intro {
-    animation: 2.5s ease-in var(--title-anim-delay) 1 normal both fade-in;
+    animation: 2.5s ease-in 0s 1 normal both fade-in;
 }
 
 .title--with-intro .title__letter {

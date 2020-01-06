@@ -1,3 +1,4 @@
+@import 'reset.css';
 @import 'colors.css';
 @import 'animations.css';
 @import 'typography.css';
@@ -7,6 +8,8 @@
 @import 'buttons/button-set.css';
 @import 'forms/field.css';
 @import 'forms/form.css';
+@import 'data-set.css';
+@import 'modals/modal.css';
 @import 'frame/frame.css';
 @import 'frame/site-header.css';
 @import 'titleScreen/title-screen.css';
@@ -16,3 +19,4 @@
 @import 'gameScreen/phrase.css';
 @import 'gameScreen/diagram.css';
 @import 'gameScreen/game.css';
+@import 'gameScreen/game-results.css';

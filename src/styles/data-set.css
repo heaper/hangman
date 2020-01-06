@@ -1,0 +1,18 @@
+.data-set {
+    font-size: 1.25em;
+    margin: 0 auto 1.5em;
+    max-width: 12em;
+}
+
+.data-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.data-item + .data-item {
+    margin-top: .25em;
+}
+
+.data-item__label {
+    margin-right: .5em;
+}

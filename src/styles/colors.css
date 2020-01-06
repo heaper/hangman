@@ -1,11 +1,14 @@
 :root {
     --color-black: #1a181d;
     --color-brown: #6d3911;
-    --color-brown-light: #a06c44;
+    --color-brown-light: #87532B;
+    --color-brown-lighter: #a06c44;
+    --color-brown-dark: #542000;
     --color-gray: #999;
     --color-white: #FBF7EA;
     --color-whiskey: #d1a16c;
     --color-whiskey-dark: #c69662;
+    --color-whiskey-dark-transparent: rgba(198, 150, 98, 0);
 
     --color-text: --color-black;
 }

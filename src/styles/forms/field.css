@@ -13,17 +13,17 @@
     font-family: var(--font-family-primary);
 }
 
-.input--text {
-	width: 100%;
-}
-
+.input--text,
 .input--textarea {
 	width: 100%;
 	max-width: 15em;
 	font-size: 1.5em;
-	height: 4em;
 	border: thin solid var(--color-black);
 	border-radius: .25em;
 	padding: .5em;
 	margin: 0;
+}
+
+.input--textarea {
+	height: 4em;
 }
